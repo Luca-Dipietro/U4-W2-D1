@@ -15,17 +15,19 @@ public class Banca {
             e.printStackTrace();
         }
 
-        ContoOnLine conto2 = new ContoOnLine("Rossi Luigi", 50350.0, 1500);
+        System.out.println();
+
+        ContoOnLine conto2 = new ContoOnLine("Rossi Luigi", 50000, 1500);
 
         conto2.stampaSaldo();
 
         try {
-            conto2.preleva(2000);
+            conto2.preleva(1500);
 
             conto2.stampaSaldo();
 
         } catch (BancaException e) {
-            System.out.println("Errore durante il prelievo: " + e.getMessage());
+            System.err.println("Errore durante il prelievo: " + e.getMessage());
             e.printStackTrace();
         }
 
