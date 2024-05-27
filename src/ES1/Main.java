@@ -1,6 +1,7 @@
 package ES1;
 
 import java.util.Arrays;
+import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -42,8 +43,8 @@ public class Main {
             } catch (ArrayIndexOutOfBoundsException e) {
                 System.err.println(e.getMessage());
 
-            } catch (Exception e) {
-                System.err.println("Devi inserire un numero intero");
+            } catch (InputMismatchException e) {
+                System.err.println("Devi inserire un valore numerico");
             }
         }
 

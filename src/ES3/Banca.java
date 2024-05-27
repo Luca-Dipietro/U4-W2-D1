@@ -25,7 +25,7 @@ public class Banca {
             conto2.stampaSaldo();
 
         } catch (BancaException e) {
-            System.out.println("Errore durante il prelievo: " + e);
+            System.out.println("Errore durante il prelievo: " + e.getMessage());
             e.printStackTrace();
         }
 

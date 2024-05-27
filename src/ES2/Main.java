@@ -19,10 +19,13 @@ public class Main {
             }
 
             System.out.println("Hai percorso " + (kmPercorsi / lCarburante) + " km/l");
+
         } catch (ArithmeticException exception) {
             System.out.println(exception.getMessage());
+
         } catch (InputMismatchException exception) {
             System.err.println("Devi inserire valori numerici");
+            
         } finally {
             sc.close();
         }
